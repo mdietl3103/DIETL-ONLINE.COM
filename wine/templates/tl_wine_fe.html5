@@ -1,0 +1,77 @@
+
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+
+  <?php if ($this->headline): ?>
+    <<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+
+
+  <?php endif; ?>
+</div>
+
+
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+<?php if ($this->headline): ?>
+
+<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+<?php endif; ?>
+
+<?php else: ?>
+<div class="wine_left_column">
+    <img src="<?php echo $wine['path']?>">
+</div>
+<?php endif; ?>
+
+<h2><?php echo $wine['name']; ?></h2>
+
+<!-- test if an image is assigned -->
+
+<div class="ce_gallery block single_gallery">
+
+  
+  
+  
+<ul>
+                    <li class="row_0 row_first row_last even col_0 col_first">
+          <figure class="image_container">
+                          <a href="files/simpler/images/image-3.png" data-lightbox="lb450" title="image-3" class="cboxElement"><img src="http://localhost/DIETL-ONLINE/assets/images/6/image-3-b3d13fe6.png" width="300" height="300" alt="image-3"></a>
+                                  </figure>
+        </li>
+                                          </ul>
+
+  
+<!-- indexer::stop -->
+<div class="pagination block">
+
+  <p>Page 4 of 4</p>
+
+  <ul>
+
+          <li class="first"><a href="index.php/gallery.html" class="first" title="Go to page 1">« First</a></li>
+    
+          <li class="previous"><a href="index.php/gallery.html?page_g450=3" class="previous" title="Go to page 3">Previous</a></li>
+    
+    <li><a href="index.php/gallery.html" class="link" title="Go to page 1">1</a></li>
+  <li><a href="index.php/gallery.html?page_g450=2" class="link" title="Go to page 2">2</a></li>
+  <li><a href="index.php/gallery.html?page_g450=3" class="link" title="Go to page 3">3</a></li>
+  <li><span class="current">4</span></li>
+    
+    
+  </ul>
+
+</div>
+<!-- indexer::continue -->
+
+</div>
+<img src="<?php echo $wine['pictures']; ?>" class="WINE_Image" width="120px">
+<?php if ($wine['region'] == 'local'): ?>
+<p>
+    <?php echo $wine['winemaker']; ?>
+</p>
+<?php else: ?>
+<p>
+</p>
+<?php endif; ?>
+<?php endforeach; ?>
+
+</div>
+
